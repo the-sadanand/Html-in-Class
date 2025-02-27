@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Hyperlink Example</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6; 
+margin: 20px;
+
+
+}
+h1 {
+color: #333;
+}
+a {
+color: #0066cc; 
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+.example { 
+margin-bottom: 20px;
+}
+</style> 
+</head> 
+<body>
+<h1>Understanding Hyperlinks in HTML</h1>
+<p>Hyperlinks are created using the <code>&lta&gt</code> tag in HTML. The
+<code>href</code> attribute specifies the URL of the page the link goes to, and the 
+<code>target</code> attribute specifies where to open the linked document.</p>
+
+<div class="example">
+<h2>Example 1: Open Link in Same Tab</h2>
+<p>Click the link below to visit Google. It opens in the same tab by default:</p> 
+<a href="https://www.google.com" target="_self">Visit Google</a>
+</div>
+
+<div class="example">
+<h2>Example 2: Open Link in a New Tab</h2>
+<p>Click the link below to visit Bing. It opens in a new tab using 
+<code>target="_blank"</code>:</p>
+<a href="https://www.bing.com" target="_blank">Visit Bing</a> 
+</div>
+
+<div class="example">
+<h2>Example 3: Link to a Section on the Same Page</h2>
+<p>Click the link below to jump to the "More Information" section on this page:</p> 
+<a href="#more-info">Go to More Information</a>
+</div>
+
+<div class="example">
+<h2>Example 4: Mailto Link</h2>
+<p>Click the link below to send an email:</p>
+<a href="mailto:example@example.com">Send Email</a>
+</div>
+
+<div id="more-info" class="example">
+<h2>More Information</h2>
+<p>In this section, we explored how the <code>href</code> and <code>target</code>
+attributes affect hyperlink behavior. Experiment with different values to see their effects.</p>
+<a href="#top">Back to Top</a> 
+</div>
+</body> 
+</html>

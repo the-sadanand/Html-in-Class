@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>HTML Structure Example</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0; 
+padding: 0; 
+line-height: 1.6;
+}
+header, footer { 
+background-color: #333;
+color: white; 
+text-align: center; 
+padding: 10px 0;
+}
+nav {
+background-color: #555;
+color: white; 
+padding: 10px;
+}
+nav a {
+color: white;
+
+
+text-decoration: none; 
+margin-right: 15px;
+
+}
+main { 
+display: flex;
+flex-wrap: wrap; 
+padding: 20px; 
+gap: 20px;
+}
+article { 
+flex: 3;
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+aside { 
+flex: 1;
+background-color: #f1f1f1;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+figure { 
+margin: 0;
+padding: 0;
+}
+figure img { 
+width: 100%;
+border-radius: 8px;
+
+
+}
+figcaption { 
+text-align: center;
+margin-top: 5px; 
+font-style: italic;
+}
+section { 
+margin-bottom: 20px;
+}
+footer span { 
+color: #ffcc00;
+}
+</style> 
+</head> 
+<body>
+<header>
+<h1>Welcome to My Structured Webpage</h1>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<main> 
+<article>
+<header>
+<h2>Main Article</h2>
+</header>
+
+
+<section>
+<p>
+This is the main content of the webpage. The `<article>` tag is used to represent self-
+contained content that could stand on its own.
+</p> 
+<figure>
+<img src="https://via.placeholder.com/600x400" alt="Example image"> 
+<figcaption>Figure 1: Placeholder image for demonstration</figcaption>
+</figure> 
+</section> 
+<section>
+<p>
+Additional details about the main content can be included in different `<section>`
+elements, making the structure more organized.
+</p> 
+</section>
+<footer>
+<p>Written by <span>John Doe</span></p>
+</footer> 
+</article>
+
+<aside> 
+<h2>Sidebar</h2>
+<p>
+This is supplementary content placed inside the `<aside>` element. It could include
+links, tips, or advertisements.
+</p> 
+</aside>
+</main>
+
+<footer>
+
+
+<p>&copy; <span>2025</span> My Structured Webpage. All rights reserved.</p> 
+</footer>
+</body>
+</html>

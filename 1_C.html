@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Image Links</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center; 
+margin: 20px;
+}
+h1 {
+color: #333;
+}
+.image-container { 
+margin: 20px 0;
+}
+
+
+img {
+border: 2px solid #ccc;
+border-radius: 10px;
+margin: 10px;
+max-width: 100%;
+height: auto;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+img:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+</style> 
+</head> 
+<body>
+<h1>Image Links to Profiles</h1>
+<p>Click on the images below to navigate to their respective profiles.</p>
+
+<div class="image-container">
+<!-- Your Image -->
+<a href="https://example.com/your-profile" target="_blank">
+<img src="your-image.jpg" alt="Your Image" width="200" height="200">
+</a>
+<p>Your Name</p>
+</div>
+
+<div class="image-container">
+<!-- Friend's Image -->
+<a href="https://example.com/friend-profile" target="_blank">
+<img src="friend-image.jpg" alt="Friend's Image" width="200" height="200">
+</a>
+<p>Friend's Name</p>
+</div> 
+</body> 
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>CSS Selector Examples</title>
+<style>
+/* 1. Simple Selector */ 
+h1 {
+color: blue; 
+text-align: center;
+}
+
+/* 2. Combinator Selector: Child selector */ 
+div > p {
+color: green; 
+font-weight: bold;
+}
+
+/* 2. Combinator Selector: Descendant selector */ 
+section p {
+color: darkorange;
+
+
+}
+
+/* 3. Pseudo-Class Selector: Hover */ 
+a:hover {
+color: red;
+text-decoration: underline;
+}
+
+/* 3. Pseudo-Class Selector: nth-child */ 
+ul li:nth-child(odd) {
+background-color: #f0f0f0;
+}
+
+/* 4. Pseudo-Element Selector: First letter */ 
+p::first-letter {
+font-size: 2em; 
+font-weight: bold; 
+color: purple;
+}
+
+/* 4. Pseudo-Element Selector: After */ 
+h2::after {
+content: " ";
+}
+
+/* 5. Attribute Selector */ 
+input[type="text"] {
+border: 2px solid blue; 
+padding: 5px; 
+border-radius: 4px;
+
+
+}
+
+input[placeholder] {
+font-style: italic; 
+color: gray;
+}
+</style> 
+</head> 
+<body>
+<!-- Simple Selector -->
+<h1>CSS Selectors Demonstration</h1>
+
+<!-- Combinator Selector --> 
+<div>
+<p>This is a child of the div element (child selector).</p> 
+</div>
+<section>
+<p>This is inside the section element (descendant selector).</p> 
+</section>
+
+<!-- Pseudo-Class Selector -->
+<a href="#">Hover over this link</a> 
+<ul>
+<li>First item</li> 
+<li>Second item</li> 
+<li>Third item</li> 
+<li>Fourth item</li>
+</ul>
+
+<!-- Pseudo-Element Selector -->
+
+
+<h2>Heading with Pseudo-Element</h2>
+<p>This paragraph starts with a styled first letter and uses pseudo-elements.</p>
+
+<!-- Attribute Selector --> 
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name"> 
+<br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+</form> 
+</body> 
+</html>

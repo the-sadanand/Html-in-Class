@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>HTML Styling Example</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Internal CSS --> 
+<style>
+/* Internal CSS: Styling all <h1> elements */ 
+h1 {
+color: blue;
+text-align: center; 
+font-family: Arial, sans-serif;
+}
+
+/* Internal CSS: Styling elements with the class 'highlight' */ 
+.highlight {
+background-color: yellow; 
+font-weight: bold; 
+padding: 5px;
+}
+
+/* Internal CSS: Styling the <footer> element */ 
+footer {
+
+
+text-align: center; 
+font-size: 0.9em; 
+color: gray; 
+margin-top: 20px;
+
+}
+</style> 
+</head> 
+<body>
+<header>
+<!-- Inline CSS: Apply styles directly to the element -->
+<h1 style="font-size: 36px; text-shadow: 2px 2px #aaa;">HTML Styling Example</h1> 
+</header>
+
+<main>
+<p>This paragraph demonstrates the use of <span class="highlight">internal CSS</span>
+and external CSS.</p>
+<p>Inline styles are applied directly to the HTML element.</p> 
+</main>
+
+<footer>
+<p>Footer text styled using internal CSS and external CSS.</p>
+</footer> 
+</body> 
+</html>

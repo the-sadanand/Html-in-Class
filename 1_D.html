@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Thumbnail Image Gallery</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center; 
+margin: 20px;
+}
+h1 {
+color: #333;
+}
+.gallery { 
+display: flex;
+flex-wrap: wrap; 
+justify-content: center; 
+gap: 20px;
+}
+
+
+.gallery a {
+display: inline-block;
+text-decoration: none;
+border: 2px solid #ccc;
+border-radius: 10px;
+overflow: hidden;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery a:hover { 
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery img { 
+display: block;
+width: 100px; 
+height: 100px; 
+object-fit: cover;
+}
+</style> 
+</head> 
+<body>
+<h1>Thumbnail Image Gallery</h1>
+<p>Click on any thumbnail to view the full-sized image.</p> 
+<div class="gallery">
+<a href="image1-full.jpg" target="_blank">
+<img src="image1-thumbnail.jpg" alt="Image 1">
+</a>
+<a href="image2-full.jpg" target="_blank">
+<img src="image2-thumbnail.jpg" alt="Image 2">
+</a>
+
+
+<a href="image3-full.jpg" target="_blank">
+<img src="image3-thumbnail.jpg" alt="Image 3">
+</a>
+<a href="image4-full.jpg" target="_blank">
+<img src="image4-thumbnail.jpg" alt="Image 4">
+</a>
+<a href="image5-full.jpg" target="_blank">
+<img src="image5-thumbnail.jpg" alt="Image 5">
+</a> 
+</div>
+</body> 
+</html>
